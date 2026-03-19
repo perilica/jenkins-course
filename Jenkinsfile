@@ -24,7 +24,11 @@ pipeline {
     stages {
 		stage ('Dynamic')
 		{
-			echo 'Dynamic'
+			when {
+				branch multi/master
+				echo 'Dynamic'
+			}
+			
 		}
         stage('Download') {
             steps {
