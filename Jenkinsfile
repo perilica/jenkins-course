@@ -26,7 +26,10 @@ pipeline {
 		{
 			when {
 				branch 'multi/master'
-				echo 'Dynamic'
+				steps
+				{
+					echo 'Dynamic'
+				}
 			}
 			
 		}
