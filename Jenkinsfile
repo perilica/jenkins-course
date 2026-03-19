@@ -26,11 +26,12 @@ pipeline {
 		{
 			when {
 				branch 'multi/master'
-				steps
+
+			}
+			steps
 				{
 					echo 'Dynamic'
 				}
-			}
 			
 		}
         stage('Download') {
