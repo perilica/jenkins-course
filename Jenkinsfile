@@ -22,6 +22,10 @@ pipeline {
 		
 	}
     stages {
+		stage ('Dynamic')
+		{
+			echo 'Dynamic'
+		}
         stage('Download') {
             steps {
                 cleanWs()
