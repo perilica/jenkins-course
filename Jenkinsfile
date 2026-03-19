@@ -25,7 +25,7 @@ pipeline {
 		stage ('Dynamic')
 		{
 			when {
-				branch multi/master
+				branch 'multi/master'
 				echo 'Dynamic'
 			}
 			
